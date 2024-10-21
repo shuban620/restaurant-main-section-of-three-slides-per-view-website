@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('./flockey/Flockey.ttf');
+}
+
+.section-1 {
+    background-image: url('../images/section4-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    font-family: 'myfont';
+
+    .text-1 {
+        color: #d10a00;
+        font-size: 100px;
+        margin-bottom: -13px;
+    }
+
+    .text-2 {
+        color: #d10a00;
+        font-size: 50px;
+    }
+
+    .text-3 {
+        font-size: 100px;
+    }
+
+    .text-rotate {
+        display: flex;
+        transform: rotatez(-5deg);
+        column-gap: 10px;
+    }
+
+    .text-span {
+        background-color: #ffd500;
+        padding: 10px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .text-span::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 36px solid #ffd500;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: translateY(-43%) translateX(45px);
+    }
+}
+
+.badge-sector {
+    background-color: #d10a00;
+    padding: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 70px;
+
+    .img-food {
+        margin-top: -90px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        z-index: 999;
+    }
+}
+
+.arrow-img {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-wrapper {
+    padding-top: 60px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.swiper-button-prev::after {
+    content: '';
+    left: 0;
+}
+
+.swiper-button-next::after {
+    content: '';
+    right: 0;
+}
+
+.handler {
+    position: relative;
+}
+
+.text-slide {
+    color: #d10a00;
+    font-size: 40px;
+}
+
+.swiper-button-prev {
+    background-image: url('../images/slider-prev-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.swiper-button-next {
+    background-image: url('../images/slider-next-btn\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+/* Style for Swiper pagination dots */
+.swiper-pagination-bullet {
+    background-color: black;
+    /* Black for inactive dots */
+    width: 12px;
+    /* Customize size */
+    height: 12px;
+    opacity: 1;
+    /* Ensure dots are visible */
+    transition: background-color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Style for the active dot */
+.swiper-pagination-bullet-active {
+    background-color: red;
+    /* Red for active dot */
+}
+
+@media screen and (max-width: 575.98px) {
+    .section-1 {
+        background-image: url('../images/section4-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        font-family: 'myfont';
+
+        .text-1 {
+            color: #d10a00;
+            font-size: 40px;
+            margin-bottom: -13px;
+        }
+
+        .text-2 {
+            color: #d10a00;
+            font-size: 25px;
+        }
+
+        .text-3 {
+            font-size: 40px;
+        }
+
+        .text-span {
+            background-color: #ffd500;
+            padding: 10px;
+            background-size: cover;
+            position: relative;
+            z-index: 3;
+        }
+
+        .text-span::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 17px solid #ffd500;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            transform: translateY(-63%) translateX(24px);
+            z-index: 1;
+        }
+
+        .text-slide {
+            color: #d10a00;
+            font-size: 25px;
+        }
+    }
+
+    .swiper-button-prev {
+        display: none;
+        background-image: url('../images/slider-prev-btn.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+
+    .swiper-button-next {
+        display: none;
+        background-image: url('../images/slider-next-btn\ \(1\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .swiper-button-prev {
+        display: none;
+        background-image: url('../images/slider-prev-btn.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+
+    .swiper-button-next {
+        display: none;
+        background-image: url('../images/slider-next-btn\ \(1\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+    .badge-sector {
+        background-color: #d10a00;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .swiper-button-prev {
+        display: none;
+        background-image: url('../images/slider-prev-btn.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+
+    .swiper-button-next {
+        display: none;
+        background-image: url('../images/slider-next-btn\ \(1\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
+}
+
+/* General Swiper Slide Style */
+.swiper-slide {
+    text-align: center;
+    transition: transform 0.5s ease-in-out;  /* Smooth transition */
+    transform: scale(0.95);  /* Slightly shrink inactive slides */
+    height: fit-content;  /* Let Swiper handle height dynamically */
+    border-radius: 25px;
+    /* Remove any fixed width or auto width */
+}
+
+/* Active Slide Styling for Desktop Screens (width > 1024px) */
+@media screen and (min-width: 1024px) {
+    .swiper-slide-active {
+        transform: scale(1.5);  /* Scale up the active slide only on desktop */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);  /* Add shadow to active slide */
+        z-index: 1;  /* Ensure the active slide stays on top */
+        position: relative;  /* Ensure the active slide stays relative to other slides */
+        .badge-sector {
+            background-color: #d10a00;
+            width: -webkit-fill-available;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }    
+    }
+}
+
+/* Remove Active Slide Styling for Small Screens (below 1024px) */
+@media screen and (max-width: 1024px) {
+    .swiper-slide-active {
+        transform: scale(1);  /* No scaling for active slide on small screens */
+        box-shadow: none;  /* Remove shadow on small screens */
+    }
+
+    /* Ensure slides are centered properly without scaling */
+    .swiper-slide {
+        transform: scale(1);  /* Keep all slides at default scale */
+    }
+}
+
